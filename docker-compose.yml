@@ -1,0 +1,17 @@
+version: '3.7'
+
+networks:
+  developement:
+    external: true
+    name: localdev
+
+services:
+  python:
+    build:
+      context: .
+    networks:
+      - developement
+    container_name: tennis-score
+    restart: on-failure
+    volumes:
+      - ./code:/usr/src/app
