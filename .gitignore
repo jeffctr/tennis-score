@@ -1,0 +1,6 @@
+*.zip
+*.tar.gz
+.env
+*.sql
+__pycache__
+.idea
